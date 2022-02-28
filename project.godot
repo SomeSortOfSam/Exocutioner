@@ -8,9 +8,20 @@
 
 config_version=4
 
+_global_script_classes=[ {
+"base": "KinematicBody",
+"class": "CharacterController",
+"language": "GDScript",
+"path": "res://Scripts/CharacterController.gd"
+} ]
+_global_script_class_icons={
+"CharacterController": ""
+}
+
 [application]
 
 config/name="Exocutioner"
+run/main_scene="res://World.tscn"
 config/icon="res://icon.png"
 
 [editor_plugins]
