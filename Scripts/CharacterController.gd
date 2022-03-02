@@ -1,16 +1,5 @@
 extends KinematicBody
 class_name CharacterController
 
-# Declare member variables here. Examples:
-# var a = 2
-# var b = "text"
-
-
-# Called when the node enters the scene tree for the first time.
-func _ready():
-	pass # Replace with function body.
-
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta):
-#	pass
+func handle_movement(requested_movement: Vector2):
+	move_and_collide(Vector3(requested_movement.x,0,requested_movement.y))

@@ -1,16 +1,10 @@
-extends KinematicBody
+extends CharacterController
 
-
-# Declare member variables here. Examples:
-# var a = 2
-# var b = "text"
-
-
-# Called when the node enters the scene tree for the first time.
-func _ready():
-	pass # Replace with function body.
-
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta):
-#	pass
+func _unhandled_input(event):
+	var action = event.is_action("ui_down") or event.is_action("ui_up")
+	action = action or event.is_action("ui_left") or event.is_action("ui_right")
+	if action:
+		var x = Input.get_axis("ui_left","ui_right")
+		var y = Input.get_axis("ui_up","ui_down")
+		var realitive_movement = Vector2(x,y)
+		handle_movement(realitive_movement)

@@ -21,6 +21,20 @@ shaded = true
 double_sided = false
 texture = ExtResource( 1 )
 
+[node name="StaticBody2" type="StaticBody" parent="."]
+transform = Transform( 1, 0, 0, 0, 0.707107, -0.707107, 0, 0.707107, 0.707107, 0, 2.7, -7 )
+
+[node name="CollisionShape" type="CollisionShape" parent="StaticBody2"]
+shape = SubResource( 1 )
+
+[node name="Sprite3D" type="Sprite3D" parent="StaticBody2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0 )
+pixel_size = 0.0415
+axis = 1
+shaded = true
+double_sided = false
+texture = ExtResource( 1 )
+
 [node name="OmniLight" type="OmniLight" parent="."]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.64263, 0.51, -2.73593 )
 omni_range = 7.323
