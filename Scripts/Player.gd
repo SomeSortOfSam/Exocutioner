@@ -11,4 +11,4 @@ func _unhandled_input(event):
 
 
 func _on_Camera_rotation_requested(amount):
-	rotate(Vector3.UP, amount)
+	rotate(transform.basis.y, amount)
