@@ -19,5 +19,6 @@ func _physics_process(_delta):
 	if is_on_floor():
 		transform.basis.y = get_floor_normal()
 		var collider :Spatial = get_last_slide_collision().collider.get_parent()
-		transform.basis.x = transform.basis.y.cross(collider.transform.basis.z)
+		#transform.basis.x = transform.basis.y.cross(collider.transform.basis.z)
+		transform = transform.orthonormalized()
 		
