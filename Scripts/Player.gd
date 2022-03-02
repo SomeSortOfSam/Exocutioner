@@ -8,3 +8,7 @@ func _unhandled_input(event):
 		var y = Input.get_axis("ui_up","ui_down")
 		var realitive_movement = Vector2(x,y)
 		request_movement(realitive_movement)
+
+
+func _on_Camera_rotation_requested(amount):
+	rotate(Vector3.UP, amount)

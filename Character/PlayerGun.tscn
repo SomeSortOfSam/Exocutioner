@@ -15,6 +15,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 margin_left = -640.0
 margin_top = -640.0
+mouse_filter = 2
 
 [node name="Sprite" type="Sprite" parent="CanvasLayer/Control"]
 scale = Vector2( 10, 10 )

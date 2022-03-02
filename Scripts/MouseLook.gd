@@ -1,16 +1,21 @@
 extends Camera
 
+export var speed := PI/180 * .2
+var active := true
+ 
+signal rotation_requested(amount)
 
-# Declare member variables here. Examples:
-# var a = 2
-# var b = "text"
-
-
-# Called when the node enters the scene tree for the first time.
 func _ready():
-	pass # Replace with function body.
+	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta):
-#	pass
+func _unhandled_input(event):
+	if event is InputEventMouseMotion and active:
+		emit_signal("rotation_requested",event.relative.x * speed)
+		rotate(Vector3.RIGHT, event.relative.y * speed)
+	elif event.is_action_pressed("ui_cancel"):
+		if Input.get_mouse_mode() != Input.MOUSE_MODE_VISIBLE:
+			Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
+			active = false
+		else:
+			Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
+			active = true
