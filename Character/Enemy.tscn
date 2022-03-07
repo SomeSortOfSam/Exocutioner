@@ -17,3 +17,5 @@ animations = [ {
 pixel_size = 0.0415
 billboard = 1
 frames = SubResource( 1 )
+
+[node name="Area" type="Area" parent="." index="2"]
