@@ -7,4 +7,3 @@ func _process (delta) :
 
 func _destroy () :
 	queue_free()
-
