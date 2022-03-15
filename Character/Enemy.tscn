@@ -16,6 +16,7 @@ animations = [ {
 [node name="Sprite3D" type="AnimatedSprite3D" parent="." index="1"]
 pixel_size = 0.0415
 billboard = 1
+alpha_cut = 1
 frames = SubResource( 1 )
 
 [node name="Area" type="Area" parent="." index="2"]
