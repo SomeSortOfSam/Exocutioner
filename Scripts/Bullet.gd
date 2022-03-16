@@ -5,8 +5,8 @@ var speed : float = 30.0
 func _process (delta) :
 	translation += global_transform.basis.z * speed * delta
 
-func _destroy () :
+func destroy () :
 	queue_free()
 
-func _on_Bullet_body_entered(body):
+func _on_Bullet_body_entered(_body):
 	queue_free()
