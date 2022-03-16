@@ -1,0 +1,9 @@
+# File produced by Open Asset Import Library (http://www.assimp.sf.net)
+# (assimp v3.3.305989322)
+
+newmtl TilesetTexture
+Kd 1 1 1
+illum 1
+map_Kd C:/Users/Youtube&Deviantart/Desktop/Exocutioner/Gravity Demo.png
+map_Ka C:/Users/Youtube&Deviantart/Desktop/Exocutioner/Gravity Demo.png
+
