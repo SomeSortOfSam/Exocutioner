@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Shoot0.wav-a8b46256304d395782e4aab6583a7871.sample"
+
+[deps]
+
+source_file="res://Guns/Orbital_L/Shoot0.wav"
+dest_files=[ "res://.import/Shoot0.wav-a8b46256304d395782e4aab6583a7871.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0
