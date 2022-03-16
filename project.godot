@@ -12,7 +12,7 @@ _global_script_classes=[ {
 "base": "KinematicBody",
 "class": "CharacterController",
 "language": "GDScript",
-"path": "res://Scripts/CharacterController.gd"
+"path": "res://Character/CharacterController.gd"
 }, {
 "base": "Resource",
 "class": "Gun",

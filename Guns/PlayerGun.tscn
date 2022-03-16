@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://Sprites/Sappler.png" type="Texture" id=1]
-[ext_resource path="res://Scripts/PlayerGun.gd" type="Script" id=2]
+[ext_resource path="res://Guns/PlayerGun.gd" type="Script" id=2]
 [ext_resource path="res://Guns/Bullet.tscn" type="PackedScene" id=3]
 
 
