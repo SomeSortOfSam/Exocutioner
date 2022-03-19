@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Shot1.png-db5ce02f632d3d679b9c0d2fe4ec898b.stex"
+path="res://.import/Shot4.png-f525fba10b602c162cc1f0e9757c1e82.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/Shot1.png"
-dest_files=[ "res://.import/Shot1.png-db5ce02f632d3d679b9c0d2fe4ec898b.stex" ]
+source_file="res://Guns/Coilgun V2/Shot4.png"
+dest_files=[ "res://.import/Shot4.png-f525fba10b602c162cc1f0e9757c1e82.stex" ]
 
 [params]
 

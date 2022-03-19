@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/FireRing1.png-82c2d45ec2e6563607f85ec8293e727e.stex"
+path="res://.import/Exploder.png-6ff48d336fea66dc7604fcd68c6adbf2.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/FireRing1.png"
-dest_files=[ "res://.import/FireRing1.png-82c2d45ec2e6563607f85ec8293e727e.stex" ]
+source_file="res://Guns/Orbital_L/Exploder.png"
+dest_files=[ "res://.import/Exploder.png-6ff48d336fea66dc7604fcd68c6adbf2.stex" ]
 
 [params]
 

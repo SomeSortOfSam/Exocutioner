@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Better Exo Iconset.png-09e293157045eb9b8266d70d76608390.stex"
+path="res://.import/XNautStandTo.png-ff0497a5abd2cdeab2c25f6cdfd701a0.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/Better Exo Iconset.png"
-dest_files=[ "res://.import/Better Exo Iconset.png-09e293157045eb9b8266d70d76608390.stex" ]
+source_file="res://Character/Enemy/XNautStandTo.png"
+dest_files=[ "res://.import/XNautStandTo.png-ff0497a5abd2cdeab2c25f6cdfd701a0.stex" ]
 
 [params]
 
@@ -23,7 +23,7 @@ flags/repeat=0
 flags/filter=false
 flags/mipmaps=false
 flags/anisotropic=false
-flags/srgb=2
+flags/srgb=1
 process/fix_alpha_border=true
 process/premult_alpha=false
 process/HDR_as_SRGB=false

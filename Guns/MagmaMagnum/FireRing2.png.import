@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Orbitar L.png-ace4f45eacc2c09f5886e8c77e86cbac.stex"
+path="res://.import/FireRing2.png-4eb974636e61994fffcb5f74ff39312a.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/Orbitar L.png"
-dest_files=[ "res://.import/Orbitar L.png-ace4f45eacc2c09f5886e8c77e86cbac.stex" ]
+source_file="res://Guns/MagmaMagnum/FireRing2.png"
+dest_files=[ "res://.import/FireRing2.png-4eb974636e61994fffcb5f74ff39312a.stex" ]
 
 [params]
 

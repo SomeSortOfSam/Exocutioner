@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Exploder.png-426ee19b2cd9d52b5d9cf573fe5059df.stex"
+path="res://.import/C.L.A.W..png-88e464bbc48971035778db9d04a6c32b.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/Exploder.png"
-dest_files=[ "res://.import/Exploder.png-426ee19b2cd9d52b5d9cf573fe5059df.stex" ]
+source_file="res://Guns/CLAW/C.L.A.W..png"
+dest_files=[ "res://.import/C.L.A.W..png-88e464bbc48971035778db9d04a6c32b.stex" ]
 
 [params]
 

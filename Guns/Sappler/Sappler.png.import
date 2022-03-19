@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Shot4.png-d88a45fc2af8daf0f094befa4d660a42.stex"
+path="res://.import/Sappler.png-ed7e6ef17043cadeacfb81c5714c1fd3.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/Shot4.png"
-dest_files=[ "res://.import/Shot4.png-d88a45fc2af8daf0f094befa4d660a42.stex" ]
+source_file="res://Guns/Sappler/Sappler.png"
+dest_files=[ "res://.import/Sappler.png-ed7e6ef17043cadeacfb81c5714c1fd3.stex" ]
 
 [params]
 

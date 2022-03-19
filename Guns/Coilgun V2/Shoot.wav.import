@@ -2,12 +2,12 @@
 
 importer="wav"
 type="AudioStreamSample"
-path="res://.import/Shoot.wav-ad580f20e2f613404a839d85291c8318.sample"
+path="res://.import/Shoot.wav-cc2f9b4e4a04da76444b3e5434f4a035.sample"
 
 [deps]
 
-source_file="res://Guns/CoilCannon/Shoot.wav"
-dest_files=[ "res://.import/Shoot.wav-ad580f20e2f613404a839d85291c8318.sample" ]
+source_file="res://Guns/Coilgun V2/Shoot.wav"
+dest_files=[ "res://.import/Shoot.wav-cc2f9b4e4a04da76444b3e5434f4a035.sample" ]
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Scorch2.png-f5ac8af99799dca4a1d3dd8cc4978087.stex"
+path="res://.import/AimDots.png-69ff651c62f1aa40af0c25b2bc2094b9.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/Scorch2.png"
-dest_files=[ "res://.import/Scorch2.png-f5ac8af99799dca4a1d3dd8cc4978087.stex" ]
+source_file="res://Guns/AimDots.png"
+dest_files=[ "res://.import/AimDots.png-69ff651c62f1aa40af0c25b2bc2094b9.stex" ]
 
 [params]
 

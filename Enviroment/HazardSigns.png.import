@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/XNautShootTo.png-20976323d9660d427a9b192c07060a8c.stex"
+path="res://.import/HazardSigns.png-7a1be17dc345e5a3641d634a9862cac7.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/XNautShootTo.png"
-dest_files=[ "res://.import/XNautShootTo.png-20976323d9660d427a9b192c07060a8c.stex" ]
+source_file="res://Enviroment/HazardSigns.png"
+dest_files=[ "res://.import/HazardSigns.png-7a1be17dc345e5a3641d634a9862cac7.stex" ]
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/HazardSigns.png-4655ddd7786a09ef8b2092e7eebf5ad7.stex"
+path="res://.import/Scorch1.png-ed40114c0efe13d2ba148918cc28247b.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/HazardSigns.png"
-dest_files=[ "res://.import/HazardSigns.png-4655ddd7786a09ef8b2092e7eebf5ad7.stex" ]
+source_file="res://Guns/Orbital_L/Scorch1.png"
+dest_files=[ "res://.import/Scorch1.png-ed40114c0efe13d2ba148918cc28247b.stex" ]
 
 [params]
 

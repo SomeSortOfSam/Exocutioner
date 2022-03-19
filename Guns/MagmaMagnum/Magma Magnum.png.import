@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Magma Magnum.png-fc1a059abe457a8ec273f04b5fa04205.stex"
+path="res://.import/Magma Magnum.png-79424eea42237a3be088c27b20d1f93d.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/Magma Magnum.png"
-dest_files=[ "res://.import/Magma Magnum.png-fc1a059abe457a8ec273f04b5fa04205.stex" ]
+source_file="res://Guns/MagmaMagnum/Magma Magnum.png"
+dest_files=[ "res://.import/Magma Magnum.png-79424eea42237a3be088c27b20d1f93d.stex" ]
 
 [params]
 

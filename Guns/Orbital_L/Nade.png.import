@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/AimDots.png-15463bc58536ff1fc4fb47f30641f180.stex"
+path="res://.import/Nade.png-911716a9c4e525ee6e9f4ec52edf1f8a.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/AimDots.png"
-dest_files=[ "res://.import/AimDots.png-15463bc58536ff1fc4fb47f30641f180.stex" ]
+source_file="res://Guns/Orbital_L/Nade.png"
+dest_files=[ "res://.import/Nade.png-911716a9c4e525ee6e9f4ec52edf1f8a.stex" ]
 
 [params]
 
@@ -23,7 +23,7 @@ flags/repeat=0
 flags/filter=false
 flags/mipmaps=false
 flags/anisotropic=false
-flags/srgb=2
+flags/srgb=1
 process/fix_alpha_border=true
 process/premult_alpha=false
 process/HDR_as_SRGB=false

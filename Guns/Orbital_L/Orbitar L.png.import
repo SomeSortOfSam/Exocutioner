@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Sappler.png-620935c3bb39ad0df3a791bb6a83015c.stex"
+path="res://.import/Orbitar L.png-3e30ab1f0d2dd36b285517986319563c.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/Sappler.png"
-dest_files=[ "res://.import/Sappler.png-620935c3bb39ad0df3a791bb6a83015c.stex" ]
+source_file="res://Guns/Orbital_L/Orbitar L.png"
+dest_files=[ "res://.import/Orbitar L.png-3e30ab1f0d2dd36b285517986319563c.stex" ]
 
 [params]
 

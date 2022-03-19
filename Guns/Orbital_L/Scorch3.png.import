@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/XNautStandTo.png-940025b14092d75aa0e1b42f15649f14.stex"
+path="res://.import/Scorch3.png-9c6160901537b9ad6d748015a630f5ef.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/XNautStandTo.png"
-dest_files=[ "res://.import/XNautStandTo.png-940025b14092d75aa0e1b42f15649f14.stex" ]
+source_file="res://Guns/Orbital_L/Scorch3.png"
+dest_files=[ "res://.import/Scorch3.png-9c6160901537b9ad6d748015a630f5ef.stex" ]
 
 [params]
 
@@ -23,7 +23,7 @@ flags/repeat=0
 flags/filter=false
 flags/mipmaps=false
 flags/anisotropic=false
-flags/srgb=1
+flags/srgb=2
 process/fix_alpha_border=true
 process/premult_alpha=false
 process/HDR_as_SRGB=false

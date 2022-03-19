@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Space Station Surfaces.png-ec26c518c972a957bb3b954c9c0797fa.stex"
+path="res://.import/FireRing1.png-0b9e1cb7daddb0a15b72cabc57ed8a5b.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/Space Station Surfaces.png"
-dest_files=[ "res://.import/Space Station Surfaces.png-ec26c518c972a957bb3b954c9c0797fa.stex" ]
+source_file="res://Guns/MagmaMagnum/FireRing1.png"
+dest_files=[ "res://.import/FireRing1.png-0b9e1cb7daddb0a15b72cabc57ed8a5b.stex" ]
 
 [params]
 
@@ -23,7 +23,7 @@ flags/repeat=0
 flags/filter=false
 flags/mipmaps=false
 flags/anisotropic=false
-flags/srgb=1
+flags/srgb=2
 process/fix_alpha_border=true
 process/premult_alpha=false
 process/HDR_as_SRGB=false

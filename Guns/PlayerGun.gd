@@ -1,4 +1,4 @@
-extends Spatial
+extends Gun
 
 export var bullet_scene : PackedScene 
 

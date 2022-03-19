@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Scorch1.png-569dba95ef8cf1e1198df244067bf3d9.stex"
+path="res://.import/Scorch2.png-f3c184009e411f53ad0969664a661e48.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/Scorch1.png"
-dest_files=[ "res://.import/Scorch1.png-569dba95ef8cf1e1198df244067bf3d9.stex" ]
+source_file="res://Guns/Orbital_L/Scorch2.png"
+dest_files=[ "res://.import/Scorch2.png-f3c184009e411f53ad0969664a661e48.stex" ]
 
 [params]
 

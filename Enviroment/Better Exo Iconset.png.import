@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Nade.png-1ca6cd7addaa16a62d196a0a046fc780.stex"
+path="res://.import/Better Exo Iconset.png-3a5bdcd440cfdf53424b109e7413f925.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/Nade.png"
-dest_files=[ "res://.import/Nade.png-1ca6cd7addaa16a62d196a0a046fc780.stex" ]
+source_file="res://Enviroment/Better Exo Iconset.png"
+dest_files=[ "res://.import/Better Exo Iconset.png-3a5bdcd440cfdf53424b109e7413f925.stex" ]
 
 [params]
 
@@ -23,7 +23,7 @@ flags/repeat=0
 flags/filter=false
 flags/mipmaps=false
 flags/anisotropic=false
-flags/srgb=1
+flags/srgb=2
 process/fix_alpha_border=true
 process/premult_alpha=false
 process/HDR_as_SRGB=false

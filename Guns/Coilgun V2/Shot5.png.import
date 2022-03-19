@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/FireRing2.png-05a55b867b420cb23f1d8171f6991579.stex"
+path="res://.import/Shot5.png-eecd707235800d593136d040099c0b9f.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/FireRing2.png"
-dest_files=[ "res://.import/FireRing2.png-05a55b867b420cb23f1d8171f6991579.stex" ]
+source_file="res://Guns/Coilgun V2/Shot5.png"
+dest_files=[ "res://.import/Shot5.png-eecd707235800d593136d040099c0b9f.stex" ]
 
 [params]
 
