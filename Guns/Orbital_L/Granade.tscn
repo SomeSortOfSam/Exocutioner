@@ -5,10 +5,6 @@
 [ext_resource path="res://Guns/Orbital_L/Nade.png" type="Texture" id=3]
 [ext_resource path="res://Guns/Orbital_L/Exploder.png" type="Texture" id=4]
 
-[sub_resource type="CapsuleShape" id=1]
-radius = 0.1
-height = 0.3
-
 [sub_resource type="Animation" id=5]
 length = 0.5
 tracks/0/type = "value"
@@ -251,14 +247,15 @@ tracks/0/keys = {
 [sub_resource type="BoxShape" id=4]
 extents = Vector3( 0.1, 0.1, 0.1 )
 
-[node name="Granade" type="Area"]
+[sub_resource type="CapsuleShape" id=1]
+radius = 0.1
+height = 0.3
+
+[node name="Granade" type="RigidBody"]
 collision_layer = 0
 collision_mask = 33
-monitorable = false
+mode = 2
 script = ExtResource( 2 )
-
-[node name="CollisionShape" type="CollisionShape" parent="."]
-shape = SubResource( 1 )
 
 [node name="Timer" type="Timer" parent="."]
 autostart = true
@@ -289,7 +286,9 @@ shape = SubResource( 4 )
 stream = ExtResource( 1 )
 unit_size = 12.2
 
-[connection signal="area_entered" from="." to="." method="_on_Granade_collision"]
+[node name="CollisionShape2" type="CollisionShape" parent="."]
+shape = SubResource( 1 )
+
 [connection signal="body_entered" from="." to="." method="_on_Granade_collision"]
 [connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
 [connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_AnimationPlayer_animation_finished"]
