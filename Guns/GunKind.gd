@@ -8,7 +8,7 @@ export(Array,AudioStream) var shot_sounds
 export(SpriteFrames) var animations
 export var cursor : Texture
 
-func get_shot() -> String:
+func get_shot_name() -> String:
 	if shot_names.size() > 0:
 		return shot_names[randi() % len(shot_names)]
 	return 'Shoot'

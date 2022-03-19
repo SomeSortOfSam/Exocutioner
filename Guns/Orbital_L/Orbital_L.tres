@@ -1,9 +1,13 @@
-[gd_resource type="Resource" load_steps=3 format=2]
+[gd_resource type="Resource" load_steps=4 format=2]
 
 [ext_resource path="res://Guns/Bullet.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Guns/GunKind.gd" type="Script" id=2]
+[ext_resource path="res://Guns/Orbital_L/Animations.tres" type="SpriteFrames" id=3]
 
 [resource]
 script = ExtResource( 2 )
 bullet = ExtResource( 1 )
+target_range = 0.0
 shot_names = [  ]
+shot_sounds = [  ]
+animations = ExtResource( 3 )
