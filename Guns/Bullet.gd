@@ -1,4 +1,5 @@
 extends Area
+class_name Bullet
 
 var speed : float = 30.0
 

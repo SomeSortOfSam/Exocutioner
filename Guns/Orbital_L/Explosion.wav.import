@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Explosion.wav-5ba4146eb40b6436eef6d1d6d3d16a00.sample"
+
+[deps]
+
+source_file="res://Guns/Orbital_L/Explosion.wav"
+dest_files=[ "res://.import/Explosion.wav-5ba4146eb40b6436eef6d1d6d3d16a00.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

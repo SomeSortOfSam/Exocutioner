@@ -1,6 +1,6 @@
 [gd_resource type="Resource" load_steps=4 format=2]
 
-[ext_resource path="res://Guns/Bullet.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Guns/Orbital_L/Granade.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Guns/GunKind.gd" type="Script" id=2]
 [ext_resource path="res://Guns/Orbital_L/Animations.tres" type="SpriteFrames" id=3]
 
