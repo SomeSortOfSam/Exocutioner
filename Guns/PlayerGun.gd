@@ -9,13 +9,14 @@ func _ready():
 
 func _unhandled_input(event):
 	if event.is_action_pressed("shoot"):
-		shoot()
+		var _moot = shoot()
 
-func shoot():
-	.shoot()
-	if sprite.frames:
+func shoot() -> bool:
+	if .shoot() and sprite.frames:
 		sprite.play(gun_kind.get_shot_name())
 		sprite.frame = 0
+		return true
+	return false
 
 
 func _on_Sprite_animation_finished():

@@ -17,5 +17,5 @@ func _on_Timer_timeout():
 	animator.play('Explode')
 	expoldeing = true
 
-func _on_AnimationPlayer_animation_finished(anim_name):
+func _on_AnimationPlayer_animation_finished(_anim_name):
 	queue_free()

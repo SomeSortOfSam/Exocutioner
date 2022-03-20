@@ -15,5 +15,5 @@ func get_shot_name() -> String:
 
 func get_shot_sound() -> AudioStream:
 	if shot_sounds.size() > 0:
-		return shot_names[randi() % len(shot_names)]
+		return shot_sounds[randi() % len(shot_sounds)]
 	return null

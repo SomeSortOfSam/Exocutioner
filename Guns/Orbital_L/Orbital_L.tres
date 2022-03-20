@@ -1,13 +1,15 @@
-[gd_resource type="Resource" load_steps=4 format=2]
+[gd_resource type="Resource" load_steps=6 format=2]
 
 [ext_resource path="res://Guns/Orbital_L/Granade.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Guns/GunKind.gd" type="Script" id=2]
 [ext_resource path="res://Guns/Orbital_L/Animations.tres" type="SpriteFrames" id=3]
+[ext_resource path="res://Guns/Orbital_L/Shoot0.wav" type="AudioStream" id=4]
+[ext_resource path="res://Guns/Orbital_L/Shoot1.wav" type="AudioStream" id=5]
 
 [resource]
 script = ExtResource( 2 )
 bullet = ExtResource( 1 )
 target_range = 0.0
 shot_names = [  ]
-shot_sounds = [  ]
+shot_sounds = [ ExtResource( 4 ), ExtResource( 5 ) ]
 animations = ExtResource( 3 )

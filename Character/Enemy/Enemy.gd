@@ -20,5 +20,5 @@ func _on_Area_area_exited(area):
 		target = null
 
 
-func _on_HitBox_area_entered(area):
+func _on_HitBox_area_entered(_area):
 	queue_free()
