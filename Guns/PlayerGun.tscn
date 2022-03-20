@@ -21,4 +21,18 @@ mouse_filter = 2
 scale = Vector2( 10, 10 )
 centered = false
 
+[node name="Cursor" type="TextureRect" parent="CanvasLayer" index="1"]
+modulate = Color( 1, 1, 1, 0.2 )
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -20.0
+margin_top = -20.0
+margin_right = 20.0
+margin_bottom = 20.0
+mouse_filter = 2
+expand = true
+stretch_mode = 5
+
 [connection signal="animation_finished" from="CanvasLayer/Control/Sprite" to="." method="_on_Sprite_animation_finished"]
