@@ -1,10 +1,9 @@
-[gd_resource type="Resource" load_steps=7 format=2]
+[gd_resource type="Resource" load_steps=6 format=2]
 
 [ext_resource path="res://Guns/GunKind.gd" type="Script" id=1]
 [ext_resource path="res://Guns/Sappler/Shoot.wav" type="AudioStream" id=2]
 [ext_resource path="res://Guns/AimDots.png" type="Texture" id=3]
 [ext_resource path="res://Guns/Sappler/Animations.tres" type="SpriteFrames" id=4]
-[ext_resource path="res://Guns/Orbital_L/Granade.tscn" type="PackedScene" id=5]
 
 [sub_resource type="AtlasTexture" id=1]
 atlas = ExtResource( 3 )
@@ -12,8 +11,7 @@ region = Rect2( 12, 12, 8, 8 )
 
 [resource]
 script = ExtResource( 1 )
-bullet = ExtResource( 5 )
-target_range = 10.0
+target_range = 30.0
 automatic = true
 shot_sounds = [ ExtResource( 2 ) ]
 animations = ExtResource( 4 )

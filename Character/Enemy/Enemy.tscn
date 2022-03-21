@@ -36,9 +36,8 @@ monitorable = false
 shape = SubResource( 2 )
 
 [node name="HitBox" type="Area" parent="." index="5"]
-collision_layer = 0
+collision_layer = 32
 collision_mask = 8
-monitorable = false
 
 [node name="CollisionShape" type="CollisionShape" parent="HitBox" index="0"]
 transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0 )

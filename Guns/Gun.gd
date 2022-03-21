@@ -29,7 +29,9 @@ func shoot() -> bool:
 			bullet.transform = global_transform
 			get_tree().get_root().add_child(bullet)
 		else:
-			print('histscan')
+			if ray.is_colliding():
+				var collider = ray.get_collider()
+				collider.get_parent().queue_free()
 		sounds.stream = gun_kind.get_shot_sound()
 		if sounds.stream and !sounds.playing:
 			sounds.play()
@@ -39,4 +41,4 @@ func shoot() -> bool:
 
 func _on_ShotBetweens_timeout():
 	if shooting:
-		shoot()
+		var _ignore = shoot()
