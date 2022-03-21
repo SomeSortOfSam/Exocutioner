@@ -1,7 +1,9 @@
 extends Camera
 
 export var speed := -PI/180 * .2
+
 var active := true
+
  
 signal rotation_requested(amount)
 
@@ -20,3 +22,4 @@ func _unhandled_input(event):
 		else:
 			Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 			active = true
+
