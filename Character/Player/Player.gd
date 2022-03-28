@@ -4,7 +4,7 @@ onready var camera = $Camera
 
 var prev_rot : Vector3
 
-func _process(delta):
+func _process(_delta):
 	if prev_rot.distance_squared_to(transform.basis.y) >= .001*.001:
 		var angle = prev_rot.signed_angle_to(transform.basis.y, -transform.basis.x)
 		camera.rotate_x(angle)

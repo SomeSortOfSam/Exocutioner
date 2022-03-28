@@ -3,7 +3,6 @@ extends Camera
 export var speed := -PI/180 * .2
 
 var active := true
-
  
 signal rotation_requested(amount)
 

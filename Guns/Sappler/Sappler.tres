@@ -1,6 +1,5 @@
 [gd_resource type="Resource" load_steps=6 format=2]
 
-[ext_resource path="res://Guns/GunKind.gd" type="Script" id=1]
 [ext_resource path="res://Guns/Sappler/Shoot.wav" type="AudioStream" id=2]
 [ext_resource path="res://Guns/AimDots.png" type="Texture" id=3]
 [ext_resource path="res://Guns/Sappler/Animations.tres" type="SpriteFrames" id=4]
@@ -9,8 +8,25 @@
 atlas = ExtResource( 3 )
 region = Rect2( 12, 12, 8, 8 )
 
+[sub_resource type="GDScript" id=2]
+script/source = "extends Resource
+class_name GunKind
+
+export(PackedScene) var bullet # leave empty for hitscan
+export var target_range : float
+export var automatic := false
+export(Array,AudioStream) var shot_sounds
+export(SpriteFrames) var animations
+export var cursor : Texture
+
+func get_shot_sound() -> AudioStream:
+	if shot_sounds.size() > 0:
+		return shot_sounds[randi() % len(shot_sounds)]
+	return null
+"
+
 [resource]
-script = ExtResource( 1 )
+script = SubResource( 2 )
 target_range = 30.0
 automatic = true
 shot_sounds = [ ExtResource( 2 ) ]

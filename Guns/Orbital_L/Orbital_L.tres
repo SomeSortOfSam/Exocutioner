@@ -1,7 +1,6 @@
 [gd_resource type="Resource" load_steps=8 format=2]
 
 [ext_resource path="res://Guns/Orbital_L/Granade.tscn" type="PackedScene" id=1]
-[ext_resource path="res://Guns/GunKind.gd" type="Script" id=2]
 [ext_resource path="res://Guns/Orbital_L/Animations.tres" type="SpriteFrames" id=3]
 [ext_resource path="res://Guns/Orbital_L/Shoot0.wav" type="AudioStream" id=4]
 [ext_resource path="res://Guns/Orbital_L/Shoot1.wav" type="AudioStream" id=5]
@@ -11,8 +10,25 @@
 atlas = ExtResource( 6 )
 region = Rect2( 10, 75, 12, 11 )
 
+[sub_resource type="GDScript" id=2]
+script/source = "extends Resource
+class_name GunKind
+
+export(PackedScene) var bullet # leave empty for hitscan
+export var target_range : float
+export var automatic := false
+export(Array,AudioStream) var shot_sounds
+export(SpriteFrames) var animations
+export var cursor : Texture
+
+func get_shot_sound() -> AudioStream:
+	if shot_sounds.size() > 0:
+		return shot_sounds[randi() % len(shot_sounds)]
+	return null
+"
+
 [resource]
-script = ExtResource( 2 )
+script = SubResource( 2 )
 bullet = ExtResource( 1 )
 target_range = 0.0
 automatic = false

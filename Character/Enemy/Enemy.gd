@@ -19,6 +19,5 @@ func _on_Area_area_exited(area):
 	if area == target:
 		target = null
 
-
 func _on_HitBox_area_entered(_area):
 	queue_free()

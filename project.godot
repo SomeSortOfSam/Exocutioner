@@ -9,31 +9,13 @@
 config_version=4
 
 _global_script_classes=[ {
-"base": "Area",
-"class": "Bullet",
-"language": "GDScript",
-"path": "res://Guns/Bullet.gd"
-}, {
 "base": "KinematicBody",
 "class": "CharacterController",
 "language": "GDScript",
 "path": "res://Character/CharacterController.gd"
-}, {
-"base": "Spatial",
-"class": "Gun",
-"language": "GDScript",
-"path": "res://Guns/Gun.gd"
-}, {
-"base": "Resource",
-"class": "GunKind",
-"language": "GDScript",
-"path": "res://Guns/GunKind.gd"
 } ]
 _global_script_class_icons={
-"Bullet": "",
-"CharacterController": "",
-"Gun": "",
-"GunKind": ""
+"CharacterController": ""
 }
 
 [application]
