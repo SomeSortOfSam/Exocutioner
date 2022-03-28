@@ -33,8 +33,9 @@ func shoot():
 func _on_Timer_timeout():
 	if ray.is_colliding() and bullet_hole:
 		var hole : Spatial = bullet_hole.instance(PackedScene.GEN_EDIT_STATE_INSTANCE)
-		hole.translate(ray.get_collision_point())
-		hole.transform.basis.y = ray.get_collision_normal()
+		hole.translate(ray.get_collision_point() + (ray.get_collision_normal() * .01))
+		var angle = ray.get_collision_normal().signed_angle_to(hole.transform.basis.z, -hole.transform.basis.x)
+		hole.rotate_x(angle)
 		ray.get_collider().add_child(hole)
 		var hit : Node = ray.get_collider().get_parent()
 		if hit.has_method("_on_HitBox_area_entered"):

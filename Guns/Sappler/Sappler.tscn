@@ -8,7 +8,7 @@
 
 [sub_resource type="AtlasTexture" id=1]
 atlas = ExtResource( 2 )
-region = Rect2( 10, 75, 12, 11 )
+region = Rect2( 45, 45, 6, 6 )
 
 [node name="Sappler" type="Spatial"]
 script = ExtResource( 1 )
@@ -18,7 +18,6 @@ bullet_hole = ExtResource( 5 )
 stream = ExtResource( 4 )
 
 [node name="RayCast" type="RayCast" parent="."]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.315139, 0, 0 )
 enabled = true
 exclude_parent = false
 cast_to = Vector3( 0, 0, -10 )
