@@ -1,7 +1,5 @@
-extends Spatial
+extends Gun
 
-onready var sprite : AnimatedSprite = $CanvasLayer/Control/AnimatedSprite
-onready var sounds : AudioStreamPlayer3D = $AudioStreamPlayer3D
 onready var hurtbox : Area = $Hurtbox
 onready var hurt_timer : Timer = $HurtTimer
 
@@ -11,11 +9,7 @@ export(AudioStream) var reload_sound
 
 var cur_shot := -1
 
-func _unhandled_input(event):
-	if event.is_action_pressed("shoot"):
-		shoot()
-
-func shoot():
+func _shoot():
 	cur_shot += 1
 	if sprite.animation != 'Reload' and cur_shot <= 1:
 		sprite.play('Shoot' + str(cur_shot + 1))
@@ -30,7 +24,7 @@ func reload():
 	sounds.play()
 	
 
-func _on_AnimatedSprite_animation_finished():
+func _on_Sprite_animation_finished():
 	if sprite.animation == 'Reload':
 		cur_shot = -1
 	if sprite.animation == 'Shoot2':

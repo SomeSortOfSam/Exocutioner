@@ -1,0 +1,47 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Guns/Gun.gd" type="Script" id=2]
+[ext_resource path="res://Guns/AimDots.png" type="Texture" id=3]
+
+[sub_resource type="AtlasTexture" id=1]
+atlas = ExtResource( 3 )
+region = Rect2( 10, 75, 12, 11 )
+
+[node name="Gun" type="Spatial"]
+script = ExtResource( 2 )
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Control" type="Control" parent="CanvasLayer"]
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -640.0
+margin_top = -640.0
+mouse_filter = 2
+
+[node name="Sprite" type="AnimatedSprite" parent="CanvasLayer/Control"]
+scale = Vector2( 10, 10 )
+animation = "Idle"
+playing = true
+centered = false
+
+[node name="Cursor" type="TextureRect" parent="CanvasLayer"]
+modulate = Color( 1, 1, 1, 0.2 )
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -20.0
+margin_top = -20.0
+margin_right = 20.0
+margin_bottom = 20.0
+mouse_filter = 2
+texture = SubResource( 1 )
+expand = true
+stretch_mode = 5
+
+[node name="GunSounds" type="AudioStreamPlayer3D" parent="."]
+
+[connection signal="animation_finished" from="CanvasLayer/Control/Sprite" to="." method="_on_Sprite_animation_finished"]

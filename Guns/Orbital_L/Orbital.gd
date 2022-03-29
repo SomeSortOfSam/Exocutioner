@@ -1,20 +1,9 @@
-extends Spatial
-
-onready var sprite : AnimatedSprite = $CanvasLayer/Control/Sprite
-onready var sounds : AudioStreamPlayer3D = $GunSounds
+extends Gun
 
 export(PackedScene) var granade
 export(Array,AudioStream) var shoot_sounds
 
-func _ready():
-	sprite.frame = 0
-	sprite.play('Idle')
-
-func _unhandled_input(event):
-	if event.is_action_pressed('shoot'):
-		shoot()
-
-func shoot():
+func _shoot():
 	sprite.play('Shoot')
 	sprite.frame = 0
 	if shoot_sounds.size() > 0:
