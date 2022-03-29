@@ -22,7 +22,11 @@ _global_script_class_icons={
 
 config/name="Exocutioner"
 run/main_scene="res://World.tscn"
+boot_splash/image="res://ExoLogo-export.png"
+boot_splash/fullsize=false
+boot_splash/use_filter=false
 config/icon="res://icon.png"
+config/windows_native_icon="res://IconMini.ico"
 
 [editor_plugins]
 
@@ -54,6 +58,16 @@ texture={
 "size_limit": 0,
 "stream": false,
 "svg/scale": 1.0
+}
+wav={
+"compress/mode": 0,
+"edit/loop": false,
+"edit/normalize": true,
+"edit/trim": true,
+"force/8_bit": false,
+"force/max_rate": false,
+"force/max_rate_hz": 44100,
+"force/mono": false
 }
 
 [input]
@@ -91,6 +105,15 @@ shoot={
 "events": [ Object(InputEventMouseButton,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"button_mask":0,"position":Vector2( 0, 0 ),"global_position":Vector2( 0, 0 ),"factor":1.0,"button_index":1,"pressed":false,"doubleclick":false,"script":null)
  ]
 }
+
+[layer_names]
+
+3d_physics/layer_1="Static"
+3d_physics/layer_2="Movement"
+3d_physics/layer_3="Player Hit"
+3d_physics/layer_4="Player Hurt"
+3d_physics/layer_5="Enemy Hurt"
+3d_physics/layer_6="Enemy Hit"
 
 [physics]
 
