@@ -14,3 +14,4 @@ shoot_sounds = [ ExtResource( 5 ), ExtResource( 6 ) ]
 
 [node name="Sprite" parent="CanvasLayer/Control" index="0"]
 frames = ExtResource( 1 )
+animation = "Idle"

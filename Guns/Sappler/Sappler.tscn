@@ -12,6 +12,7 @@ bullet_hole = ExtResource( 5 )
 
 [node name="Sprite" parent="CanvasLayer/Control" index="0"]
 frames = ExtResource( 3 )
+animation = "Idle"
 
 [node name="GunSounds" parent="." index="1"]
 stream = ExtResource( 4 )

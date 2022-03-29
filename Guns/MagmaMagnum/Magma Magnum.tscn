@@ -17,6 +17,7 @@ reload_sound = ExtResource( 5 )
 
 [node name="Sprite" parent="CanvasLayer/Control" index="0"]
 frames = ExtResource( 3 )
+animation = "Idle"
 
 [node name="Hurtbox" type="Area" parent="." index="2"]
 collision_layer = 8
