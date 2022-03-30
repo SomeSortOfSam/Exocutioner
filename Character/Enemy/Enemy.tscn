@@ -19,6 +19,7 @@ radius = 10.0
 
 [node name="Enemy" instance=ExtResource( 1 )]
 script = ExtResource( 2 )
+target_player_distance = 3.0
 
 [node name="Sprite3D" type="AnimatedSprite3D" parent="." index="1"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.3, 0 )
