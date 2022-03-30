@@ -8,7 +8,7 @@ func _process(_delta):
 	if prev_rot.distance_squared_to(transform.basis.y) >= .001*.001:
 		var angle = prev_rot.signed_angle_to(transform.basis.y, -transform.basis.x)
 		camera.rotate_x(angle)
-		camera.rotation.x = clamp(camera.rotation.x,-PI,PI)
+		camera.rotation.x = clamp(camera.rotation.x,-PI/2,PI/2)
 	prev_rot = transform.basis.y
 
 func _physics_process(_delta):
