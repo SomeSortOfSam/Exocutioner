@@ -11,6 +11,7 @@ var target : Spatial
 func _process(_delta):
 	if target:
 		var position = target.to_global(target.translation)
+		look_at(position,transform.basis.y)
 		position = to_local(position)
 		if position.distance_squared_to(Vector3.ZERO) > pow(target_player_distance,2):
 			if animator.animation == 'Stand':
