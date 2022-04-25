@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://Character/Enemy/Enemy.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Enviroment/Material_001.material" type="Material" id=2]
@@ -6,6 +6,7 @@
 [ext_resource path="res://Enviroment/BlueStationTiles.material" type="Material" id=4]
 [ext_resource path="res://Character/Player/Player.tscn" type="PackedScene" id=5]
 [ext_resource path="res://Music/Event Horizon.wav" type="AudioStream" id=6]
+[ext_resource path="res://Ending.png" type="Texture" id=7]
 
 [sub_resource type="ArrayMesh" id=1]
 resource_name = "Cube.001"
@@ -121,3 +122,10 @@ transform = Transform( 1, 0, 0, 0, 0.765977, 0.642868, 0, -0.642868, 0.765977, -
 
 [node name="Enemy5" parent="." instance=ExtResource( 1 )]
 transform = Transform( -0.290865, -0.771101, 0.566393, -0.0551891, 0.604525, 0.794672, -0.955171, 0.199884, -0.218391, -18.7359, -1.78277, -23.9088 )
+
+[node name="Sprite3D" type="Sprite3D" parent="."]
+transform = Transform( -20, 1.73215e-06, 1.23689e-07, 0, 16.383, -0.573577, -3.01992e-06, -11.4715, -0.819152, -72.2334, 13.4077, -18.2121 )
+billboard = 1
+shaded = true
+alpha_cut = 2
+texture = ExtResource( 7 )
