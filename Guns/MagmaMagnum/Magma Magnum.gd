@@ -2,6 +2,7 @@ extends Gun
 
 onready var hurtbox : Area = $Hurtbox
 onready var hurt_timer : Timer = $HurtTimer
+onready var hurshape : CollisionShape = $Hurtbox/CollisionShape
 
 export(AudioStream) var shoot1_sound
 export(AudioStream) var shoot2_sound
@@ -15,7 +16,7 @@ func _shoot():
 		sprite.play('Shoot' + str(cur_shot + 1))
 		sounds.stream = shoot1_sound if cur_shot < 1 else shoot2_sound
 		sounds.play()
-		hurtbox.monitorable = true
+		hurshape.disabled = false
 		hurt_timer.start()
 
 func reload():
@@ -32,4 +33,4 @@ func _on_Sprite_animation_finished():
 		sprite.play('Idle')
 
 func _on_HurtTimer_timeout():
-	hurtbox.monitorable = false
+	hurshape.disabled = true

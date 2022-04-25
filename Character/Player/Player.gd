@@ -34,10 +34,12 @@ func set_health(new_health):
 	health = new_health
 	hurt_texture.modulate.a = inverse_lerp(max_health,0,health)
 	if health <= 0:
+# warning-ignore:return_value_discarded
 		get_tree().change_scene("res://demoLevel10.tscn")
 
 func _on_Camera_rotation_requested(amount):
 	rotate(transform.basis.y, amount)
 
+# warning-ignore:unused_argument
 func _on_HitBox_area_entered(area):
 	self.health -= 1
