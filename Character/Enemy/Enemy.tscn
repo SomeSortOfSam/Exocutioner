@@ -1,8 +1,9 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://Character/Character.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Character/Enemy/Enemy.gd" type="Script" id=2]
 [ext_resource path="res://Character/Enemy/XNautStandTo.png" type="Texture" id=3]
+[ext_resource path="res://Guns/MagmaMagnum/Magma Magnum.tscn" type="PackedScene" id=4]
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
@@ -44,6 +45,27 @@ collision_mask = 8
 transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0 )
 shape = SubResource( 3 )
 
+[node name="MagmaMagnum" parent="." index="5" instance=ExtResource( 4 )]
+
+[node name="Control" parent="MagmaMagnum/CanvasLayer" index="0"]
+visible = false
+
+[node name="Sprite" parent="MagmaMagnum/CanvasLayer/Control" index="0"]
+visible = false
+
+[node name="Cursor" parent="MagmaMagnum/CanvasLayer" index="1"]
+visible = false
+
+[node name="Hurtbox" parent="MagmaMagnum" index="2"]
+collision_layer = 16
+collision_mask = 4
+
+[node name="ShootTimer" type="Timer" parent="." index="6"]
+one_shot = true
+
 [connection signal="area_entered" from="Pathfinding" to="." method="_on_Area_area_entered"]
 [connection signal="area_exited" from="Pathfinding" to="." method="_on_Area_area_exited"]
 [connection signal="area_entered" from="HitBox" to="." method="_on_HitBox_area_entered"]
+[connection signal="timeout" from="ShootTimer" to="." method="_on_ShootTimer_timeout"]
+
+[editable path="MagmaMagnum"]
