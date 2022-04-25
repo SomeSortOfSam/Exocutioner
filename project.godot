@@ -27,7 +27,7 @@ _global_script_class_icons={
 [application]
 
 config/name="Exocutioner"
-run/main_scene="res://World.tscn"
+run/main_scene="res://demoLevel10.tscn"
 boot_splash/image="res://ExoLogo-export.png"
 boot_splash/fullsize=false
 boot_splash/use_filter=false
