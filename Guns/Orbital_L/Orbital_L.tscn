@@ -8,6 +8,7 @@
 [ext_resource path="res://Guns/Orbital_L/Shoot1.wav" type="AudioStream" id=6]
 
 [node name="Orbital_L" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 0, 0 )
 script = ExtResource( 3 )
 granade = ExtResource( 2 )
 shoot_sounds = [ ExtResource( 5 ), ExtResource( 6 ) ]
