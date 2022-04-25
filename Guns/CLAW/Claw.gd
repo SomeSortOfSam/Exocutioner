@@ -4,6 +4,7 @@ onready var ray : RayCast = $RayCast
 
 func _shoot():
 	if ray.is_colliding() and not sprite.animation == 'Grab':
+		emit_signal("recoil",Vector2(0,-30))
 		sprite.play('Grab')
 		sounds.play()
 		var hit : Node = ray.get_collider().get_parent()
@@ -12,3 +13,4 @@ func _shoot():
 
 func _on_Sprite_animation_finished():
 	sprite.play('Idle')
+	sprite.playing = false

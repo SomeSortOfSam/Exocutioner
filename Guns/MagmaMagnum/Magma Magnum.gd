@@ -18,6 +18,7 @@ func _shoot():
 		sounds.play()
 		hurshape.disabled = false
 		hurt_timer.start()
+		emit_signal("recoil",Vector2(0,5))
 
 func reload():
 	sprite.play('Reload')

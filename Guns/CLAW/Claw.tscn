@@ -11,6 +11,7 @@ script = ExtResource( 3 )
 [node name="Sprite" parent="CanvasLayer/Control" index="0"]
 frames = ExtResource( 2 )
 animation = "Idle"
+playing = false
 
 [node name="GunSounds" parent="." index="1"]
 stream = ExtResource( 4 )

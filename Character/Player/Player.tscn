@@ -60,6 +60,10 @@ texture = SubResource( 3 )
 expand = true
 
 [connection signal="rotation_requested" from="Camera" to="." method="_on_Camera_rotation_requested"]
+[connection signal="recoil" from="Camera/Sappler" to="." method="_on_recoil"]
+[connection signal="recoil" from="Camera/MagmaMagnum" to="." method="_on_recoil"]
+[connection signal="recoil" from="Camera/Claw" to="." method="_on_recoil"]
+[connection signal="recoil" from="Camera/Orbital_L" to="." method="_on_recoil"]
 [connection signal="area_entered" from="HitBox" to="." method="_on_HitBox_area_entered"]
 
 [editable path="Camera/Sappler"]

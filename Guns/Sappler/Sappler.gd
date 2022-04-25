@@ -1,4 +1,5 @@
 extends Gun
+class_name Sappler
 
 onready var ray : RayCast = $RayCast
 onready var timer : Timer = $Timer
@@ -28,6 +29,7 @@ func stop_shooting():
 	timer.stop()
 
 func _on_Timer_timeout():
+	emit_signal("recoil",Vector2(0,1))
 	if ray.is_colliding() and bullet_hole:
 		make_bullet_hole(ray.get_collision_normal(),ray.get_collision_point(),\
 			ray.get_collider(),bullet_hole)

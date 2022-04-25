@@ -18,10 +18,16 @@ _global_script_classes=[ {
 "class": "Gun",
 "language": "GDScript",
 "path": "res://Guns/Gun.gd"
+}, {
+"base": "Gun",
+"class": "Sappler",
+"language": "GDScript",
+"path": "res://Guns/Sappler/Sappler.gd"
 } ]
 _global_script_class_icons={
 "CharacterController": "",
-"Gun": ""
+"Gun": "",
+"Sappler": ""
 }
 
 [application]

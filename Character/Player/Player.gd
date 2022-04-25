@@ -43,3 +43,6 @@ func _on_Camera_rotation_requested(amount):
 # warning-ignore:unused_argument
 func _on_HitBox_area_entered(area):
 	self.health -= 1
+
+func _on_recoil(amount):
+	request_movement(amount)

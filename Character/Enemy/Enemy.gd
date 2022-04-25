@@ -9,7 +9,7 @@ export var target_player_distance : float = 1
 var target : Spatial
 
 func _process(_delta):
-	if target:
+	if target and animator.animation != 'Dead':
 		var position = target.to_global(target.translation)
 		look_at(position,transform.basis.y)
 		position = to_local(position)
@@ -29,11 +29,13 @@ func _on_Area_area_exited(area):
 		target = null
 
 func _on_HitBox_area_entered(_area):
-	queue_free()
+	animator.play('Dead')
 
 func _on_ShootTimer_timeout():
 	gun._shoot()
 	animator.play('Shoot')
 
 func _on_Sprite3D_animation_finished():
+	if animator.animation == 'Dead':
+		queue_free()
 	animator.play('Stand')
