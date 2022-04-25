@@ -22,7 +22,6 @@ func reload():
 	sprite.play('Reload')
 	sounds.stream = reload_sound
 	sounds.play()
-	
 
 func _on_Sprite_animation_finished():
 	if sprite.animation == 'Reload':
