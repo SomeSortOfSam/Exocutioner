@@ -7,6 +7,15 @@ export var health := 3 setget set_health
 
 var prev_rot : Vector3
 var max_health = health
+var gun_index = 0
+
+func _unhandled_input(event):
+	if event.is_action_pressed("switch_gun"):
+		camera.get_child(gun_index)._setvisible(false)
+		gun_index += 1
+		if gun_index >= camera.get_child_count():
+			gun_index = 0
+		camera.get_child(gun_index)._setvisible(true)
 
 func _process(_delta):
 	if prev_rot.distance_squared_to(transform.basis.y) >= .001*.001:
