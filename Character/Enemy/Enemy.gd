@@ -13,6 +13,8 @@ func _process(_delta):
 		var position = target.to_global(target.translation)
 		position = to_local(position)
 		if position.distance_squared_to(Vector3.ZERO) > pow(target_player_distance,2):
+			if animator.animation == 'Stand':
+				animator.animation = 'Run'
 			request_movement(Vector2(position.x,position.z).normalized() * speed)
 		elif shoot_timer.time_left == 0:
 			shoot_timer.start()
@@ -30,4 +32,7 @@ func _on_HitBox_area_entered(_area):
 
 func _on_ShootTimer_timeout():
 	gun._shoot()
-	
+	animator.play('Shoot')
+
+func _on_Sprite3D_animation_finished():
+	animator.play('Stand')

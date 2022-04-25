@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://Enviroment/TilesetTexture.material" type="Material" id=1]
 [ext_resource path="res://Character/Player/Player.tscn" type="PackedScene" id=2]
@@ -6,6 +6,7 @@
 [ext_resource path="res://Music/Event Horizon.wav" type="AudioStream" id=4]
 [ext_resource path="res://Enviroment/World.tres" type="Shape" id=5]
 [ext_resource path="res://default_env.tres" type="Environment" id=6]
+[ext_resource path="res://Enviroment/demoLevel1.0.dae" type="PackedScene" id=7]
 
 [sub_resource type="ArrayMesh" id=1]
 resource_name = "meshId0_name"
@@ -50,6 +51,8 @@ light_energy = 0.706
 light_indirect_energy = 2.174
 light_specular = 0.0
 omni_range = 39.244
+
+[node name="demoLevel10" parent="StaticBody" instance=ExtResource( 7 )]
 
 [node name="Enemy" parent="." instance=ExtResource( 3 )]
 transform = Transform( -1, 8.74228e-08, -3.82137e-15, 0, -4.37114e-08, -1, -8.74228e-08, -1, 4.37114e-08, 5.42008, 64, 31 )
