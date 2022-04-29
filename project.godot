@@ -37,7 +37,7 @@ run/main_scene="res://demoLevel10.tscn"
 boot_splash/image="res://ExoLogo-export.png"
 boot_splash/fullsize=false
 boot_splash/use_filter=false
-config/icon="res://icon.png"
+config/icon="res://IconMini.png"
 config/windows_native_icon="res://IconMini.ico"
 
 [editor_plugins]
